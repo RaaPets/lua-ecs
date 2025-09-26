@@ -1,5 +1,7 @@
 local World = require "ecs.world"
 
+local SystemPos = require "ecs.system_pos"
+
 
 World:debug()
 
@@ -9,6 +11,7 @@ local e2 = World:createEntity()
 local e3 = World:createEntity()
 	World:addComponent(e3, 'pos', {x=7, y=42})
 World:debug()
+SystemPos:update(World)
 
 World:removeEntityById(e2)
 World:debug()
