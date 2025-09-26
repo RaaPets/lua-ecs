@@ -1,2 +1,2 @@
 # lua-ecs
-simple ECS in Lua
+simple ECS skeleton in Lua for using in Lutro etc
